@@ -1,0 +1,14 @@
+{
+  "name": "aula01",
+  "version": "1.0.0",
+  "description": "Projeto da Aula 01 de Node",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+	"dev": "echo \"Publicando em Dsv\"",
+	"prod": "echo \"Publicando em Prd\""
+	
+  },
+  "author": "Andrei Andrade",
+  "license": "ISC"
+}

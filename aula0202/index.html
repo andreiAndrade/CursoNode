@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width">
+        <title>API Cliente</title>
+    </head>
+    <body>
+        <script type="text/javascript">
+            function reqListner () {
+                console.log(this.responseText);
+                var estados = JSON.parse(this.responseText);
+                console.log(estados);
+            };
+            var Request = new XMLHttpRequest();
+            Request.onload = reqListner;
+            Request.open("get", "http://localhost:8000", true);
+            Request.send();
+        </script>
+    </body>
+</html>
