@@ -1,0 +1,23 @@
+<style>
+    .container {
+        margin-bottom: 5%; 
+        padding-bottom: 3%; 
+        background-color: white;
+        box-shadow: 0 0 36px darkslategrey;
+        width: 60%;
+    }
+</style>
+<div class="container">
+    <div class="col-sm-12">
+        <h2>{{filme.title}}</h2>
+    </div>
+        <div class="col-sm-6">
+            <img style="width: 100%" src="https://image.tmdb.org/t/p/w370{{filme.poster_path}}" title="{{filme.title}}"/>
+        </div>
+        <div class="col-sm-6">
+            <h3>{{filme.title}}</h3>
+            <p>{{filme.overview}}</p>
+            <button type="button" class="btn btn-success">Like</button>
+            <button type="button" class="btn btn-danger">Unlike</button>
+        </div>
+</div>
