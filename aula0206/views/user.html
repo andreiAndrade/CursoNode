@@ -1,0 +1,7 @@
+{% extends "layout.html" %}
+{% block content %}
+    {% for r in results %}
+        {% include "user_line.html"%}
+    {% endfor %}
+    
+{% endblock %}
